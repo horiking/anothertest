@@ -11,7 +11,7 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true)
-		const apiUrl = `http://127.0.0.1:8000/api/`;
+		const apiUrl = `http://ec2-18-225-37-154.us-east-2.compute.amazonaws.com:8000/api/`;
 		fetch(apiUrl)
 			.then((data) => data.json())
 			.then((elements) => {
